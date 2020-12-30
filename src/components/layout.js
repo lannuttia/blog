@@ -1,12 +1,12 @@
-import React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import React from 'react';
+import PropTypes from 'prop-types';
+import {useStaticQuery, graphql} from 'gatsby';
 
-import Header from "./header"
-import ThemeContext from "../context/ThemeContext"
-import "./layout.css"
+import Header from './header';
+import ThemeContext from '../context/ThemeContext';
+import './layout.css';
 
-const Layout = ({ children }) => {
+const Layout = ({children}) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -15,11 +15,11 @@ const Layout = ({ children }) => {
         }
       }
     }
-  `)
+  `);
 
   return (
     <ThemeContext.Consumer>
-      {theme => (
+      {(theme) => (
         <div className={theme.dark ? 'dark' : 'light'}>
           <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
           <div
@@ -31,10 +31,12 @@ const Layout = ({ children }) => {
           >
             <main>{children}</main>
             <button className="dark-switcher" onClick={theme.toggleDark}>
-              {theme.dark ? <span>Light mode ☀</span> : <span>Dark mode ☾</span>}
+              { theme.dark ?
+                  <span>Light mode ☀</span> :
+                  <span>Dark mode ☾</span> }
             </button>
             <footer style={{
-              marginTop: `2rem`
+              marginTop: `2rem`,
             }}>
               © {new Date().getFullYear()}, Built with
               {` `}
@@ -44,11 +46,11 @@ const Layout = ({ children }) => {
         </div>
       )}
     </ThemeContext.Consumer>
-  )
-}
+  );
+};
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-}
+};
 
-export default Layout
+export default Layout;

@@ -1,10 +1,10 @@
-import React from "react"
+import React from 'react';
 
-import TableOfContents from "../components/tableofcontents"
+import TableOfContents from '../components/tableofcontents';
 
-const TITLE = "Software"
-const DESCRIPTION = "My Thoughts and Opinions on Software"
-const LINKS = []
+const TITLE = 'Software';
+const DESCRIPTION = 'My Thoughts and Opinions on Software';
+const LINKS = [];
 
 const SoftwarePage = () => (
   <TableOfContents
@@ -12,5 +12,5 @@ const SoftwarePage = () => (
     description={DESCRIPTION}
     links={LINKS}
   />
-)
-export default SoftwarePage
+);
+export default SoftwarePage;

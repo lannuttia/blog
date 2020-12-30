@@ -1,8 +1,9 @@
-import React from "react"
+import React from 'react';
+import PropTypes from 'prop-types';
 
-import LinkList from "../components/linklist"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import LinkList from '../components/linklist';
+import Layout from '../components/layout';
+import SEO from '../components/seo';
 
 const TableOfContents = (props) => (
   <Layout>
@@ -10,6 +11,13 @@ const TableOfContents = (props) => (
     <h1>{props.description}</h1>
     <LinkList links={props.links} />
   </Layout>
-)
-export default TableOfContents
+);
+
+TableOfContents.propTypes = {
+  title: PropTypes.string,
+  description: PropTypes.string,
+  links: PropTypes.arrayOf(PropTypes.string),
+};
+
+export default TableOfContents;
 
