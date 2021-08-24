@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<h1>About Me:</h1>
+
+<h2>My Professional History:</h2>
+<p>
+  I'm a software engineer working remotely out of the greater Fayetteville
+  Arkansas area. I graduated from the University of Arkansas in December of
+  2016 with my Bachelors of Science in Electrical Engineering. Right out of
+  college I worked at L3Harris Technologies in Greenville Texas. While there,
+  I discovered my love of Software. I did everything from DSP algorithm
+  development, to web service development, to FE web development, and eventually
+  to CI/CD pipeline development. After several years of working there, I found a
+  job working a J.B. Hunt Transportation. While at J.B. Hunt, I have been working
+  on Spring Boot and Quarkus applications for the
+  <a href="https://www.jbhunt.com/our-technology/carrier-360.html">Carrier 360</a>
+  platform.
+</p>
+
+<h2>My Hobbies:</h2>
+<p>
+  I love dabbling in Linux and BSD system administration, and ricing my own Linux
+  desktop. I also love playing games like Factorio, Feed the Beast (Minecraft with
+  mods), and the occasional shooter like Doom. Despite my love of gaming, I do not
+  own a Windows or Mac computer. All of my computers and networking equipment runs
+  some form of BSD or Linux.
+</p>
+
+<h2>Latest Posts:</h2>
+<ul>
+  {% for post in site.posts limit: 5 %}
+    <li>
+      <a href="{{ post.url }}">{{ post.date | date: "%B %-d, %Y" }} - {{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
