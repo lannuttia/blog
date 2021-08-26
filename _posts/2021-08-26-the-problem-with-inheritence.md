@@ -117,7 +117,7 @@ Looking at this you might say "That looks great! Everything is shared and I'm
 not having to write hardly any code for each non-abstract class." and yeah,
 it's fine for now.
 
-![Bill Lumbergh Meme](https://imgflip.com/i/5kvt0e)
+![Bill Lumbergh Meme](/assets/2021-08-26-bill-lumbergh-meme.jpeg)
 
 Now there's your problem. How were you supposed to know that the business was
 going to pivot like this and now they want support for a rubber duck. I mean,
