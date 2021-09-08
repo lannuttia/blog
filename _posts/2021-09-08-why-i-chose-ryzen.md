@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Why I Chose Ryzen"
-date: 2021-09-08 18:33:16 -0500
+date: 2021-09-08 11:33:16 -0500
 category: blog
 tags: [pc-building]
 ---
