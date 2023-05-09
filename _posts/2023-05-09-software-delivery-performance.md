@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Software Delivery Performance"
-date: 2023-05-09 17:30:00 -0500
+date: 2023-05-09 17:00:00 -0500
 category: blog
 tags: [software-engineering]
 ---
