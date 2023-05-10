@@ -1,0 +1,10 @@
+---
+layout: default
+---
+<ul>
+    {% for post in site.posts | where:"category","blog" %}
+        <li>
+            <a href="{{ post.url }}">{{ post.date | date: "%B %-d, %Y" }} - {{ post.title }}</a>
+        </li>
+    {% endfor %}
+</ul>
