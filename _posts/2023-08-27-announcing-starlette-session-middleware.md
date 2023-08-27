@@ -14,7 +14,7 @@ storage, cookie based sessions, as well as JWT and signed tokens that are
 compatible with Starlette's existing upstream middleware. I fully intend on
 adding support for authorization header based sessions but that does not exist
 yet (even though it should be easy to add). The source code can be found
-[here](https://github.com/lannuttia/starlette-session-middleware and the package
+[here](https://github.com/lannuttia/starlette-session-middleware) and the package
 can be found on PyPI
 [here](https://pypi.org/project/starlette-session-middleware/).
 
