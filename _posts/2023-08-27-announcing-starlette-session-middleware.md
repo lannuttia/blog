@@ -21,7 +21,7 @@ can be found on PyPI
 ## Design Philosophy
 Starlette Session Middleware is designed to provide sane options for session
 management out of the box but not lock its consumers into one specific way of
-doing things. This is accoplished through the concept of specialized "backends".
+doing things. This is accomplished through the concept of specialized "backends".
 This allows you to mix-and-match behaviors by allowing you to swap out these
 backends based on how exactly you want sessions to be handled. This also allows
 developers to easily create custom backends to accomplish their specific goals
@@ -166,7 +166,7 @@ in FastAPI that exists
 [here](https://fastapi.tiangolo.com/tutorial/security/oauth2-jwt/). I thought
 this was a little messy and that led me to look into starlette middleware for
 session management. Unfortunately for me, Starlette's session middleware does
-not support JWTs out of the box so it does not meet my usecase's needs. There
+not support JWTs out of the box so it does not meet my use case. There
 are third-party starlette session packages that exist too but none of these
 were very flexible and largly seemed to be copy pasted from the upstream
 Starlette SessionMiddleware implementation with minor changes to change how
